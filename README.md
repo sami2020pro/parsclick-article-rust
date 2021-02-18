@@ -22,7 +22,7 @@ All those who do not know **programming** and are a little familiar with the **o
 This **book** is suitable for everyone, especially for those who have little knowledge, even those who are professionals can use this **book**. (To the Rust way)
 
 <h1>To the Rust way :book:</h1>
-Not completed
+When I wrote these articles, I also wrote a book for Persian speakers called <a href="https://github.com/sami2020pro/to-the-rust-way">To the Rust way</a> that you can read this wonderful book.
 
 # How to compile and use code
 To <strong>compile</strong> and <strong>execute</strong> the codes, you have to enter the desired section and all the codes of that section are in the **src** folder.
