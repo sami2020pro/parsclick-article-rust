@@ -10,7 +10,7 @@ Here you have access to **Source Code** and **Markdown** files and you can use t
 
 ```rust
 fn main() {
-  let sami2020pro = "parsclick article about rust | samikaner";
+  let sami2020pro = "parsclick article about rust | samikaner".to_string();
   println!("{}", sami2020pro);
 }
 ```
