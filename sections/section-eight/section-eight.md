@@ -33,6 +33,54 @@ fn calculate_length(s: &String) -> usize {
 The length of 'Hello World from sami2020pro' is 28
 ```
 
+## دانستنی
+
+--
+نکته: توجه کنید که `usize` یعنی `unsigned integers` که به این معنی هست که عدد ما میتونه صفر یا بیشتر از صفر باشه ولی نمیتونه کمتر از صفر باشه اما `isize` میتونه صفر یا بیشتر از صفذ یا حتی کمتر از صفر باشه.
+
+به مثال زیر توجه کنید
+
+```rust
+fn main() {
+        let x: usize = 1; // usize can hold to zero or more than zero
+        let y: usize = 0; // usize can hold to zero or more than zero
+        let z: isize = -10; // isize can hold to zero or more than zero OR less than zero
+
+        println!("x {} | y {} | z {}", x, y, z);
+}
+```
+
+خروجی کد بالا
+
+```
+x 1 | y 0 | z -10
+```
+
+دیدید که معنی `usize` و `isize` در راست چیه.
+
+برای اثبات به مثال زیر توجه کنید
+
+```rust
+fn main() {
+        let x: usize = 1; // usize can hold to zero or more than zero
+        let y: usize = 0; // usize can hold to zero or more than zero
+        let z: usize = -10; // Error, We need ISIZE !!!
+
+        println!("x {} | y {} | z {}", x, y, z);
+}
+```
+
+```
+error[E0600]: cannot apply unary operator `-` to type `usize`
+...
+```
+
+در بالا هم براتون اثبات کردیم که واقعا `usize` و `isize` چی هستن.
+--
+
+در بالا میبینید که ما استرینگمون رو به فانکشن پاس دادیم اما بعد از اون که استرینگمون رو چاپ کردیم به ما ارروری نداد، چرا ؟
+
+
 
 
 برای درک بهتر این موضوع بیاید با موارد زیر آشنا بشیم
