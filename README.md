@@ -34,6 +34,6 @@ rustc file_name.rs
 ```
 
 # What are the resources we use
-1. First, my self
-2. Second, Rust by Example
-3. Third, other 
+- First, my self
+- Second, Rust by Example
+- Third, other 
